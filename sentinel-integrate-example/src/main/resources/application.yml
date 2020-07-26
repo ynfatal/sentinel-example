@@ -1,0 +1,10 @@
+server:
+  port: 18083
+spring:
+  application:
+    name: sentinel-integrate-example
+  cloud:
+    sentinel:
+      transport:
+        # Sentinel 仪表盘地址，当地址为空时不会尝试连接仪表盘
+        dashboard: localhost:8080
