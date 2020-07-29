@@ -20,4 +20,9 @@ public class TestController {
     public String apiHello(@PathVariable String name) {
         return service.sayHello(name);
     }
+
+    @GetMapping("/testFallback")
+    public String testFallback() {
+        return service.testFallback();
+    }
 }
