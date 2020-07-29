@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: sentinel-openfeign-consumer-example
+  cloud:
+    sentinel:
+      transport:
+        # Sentinel 仪表盘地址，当地址为空时不会尝试连接仪表盘
+        dashboard: localhost:8080
+# 开启 feign 对 sentinel 的支持
+feign:
+  sentinel:
+    enabled: true
